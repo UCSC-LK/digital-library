@@ -64,7 +64,7 @@
 <%
         }
     }
-    
+
     if (osLink)
     {
 %>
@@ -78,7 +78,7 @@
 <%
         }
 %>
-        
+
         <script type='text/javascript' src="<%= request.getContextPath() %>/static/js/jquery/jquery-1.10.2.min.js"></script>
         <script type='text/javascript' src='<%= request.getContextPath() %>/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
         <script type='text/javascript' src='<%= request.getContextPath() %>/static/js/bootstrap/bootstrap.min.js'></script>
@@ -94,7 +94,7 @@
     <%
     }
     %>
-    
+
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -107,7 +107,7 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="undernavigation">
 <a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-inverse navbar-fixed-top">    
+<header class="navbar navbar-inverse navbar-fixed-top">
     <%
     if (!navbar.equals("off"))
     {
@@ -129,17 +129,17 @@
 </header>
 
 <main id="content" role="main">
-<div class="container banner">
-    <div class="row">
-        <div class="col-md-9 brand">
-            <h1><fmt:message key="jsp.layout.header-default.brand.heading" /></h1>
-            <fmt:message key="jsp.layout.header-default.brand.description" /> 
-        </div>
-        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif" alt="DSpace logo" />
-        </div>
-    </div>
-</div>
-<br/>
+<%--<div class="container banner">--%>
+<%--&lt;%&ndash;    <div class="row">&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <div class="col-md-9 brand">&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <h1><fmt:message key="jsp.layout.header-default.brand.heading" /></h1>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <fmt:message key="jsp.layout.header-default.brand.description" />&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif" alt="DSpace logo" />&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
+<%--</div>--%>
+<%--<br/>--%>
                 <%-- Location bar --%>
 <%
     if (locbar)
@@ -147,7 +147,7 @@
 %>
 <div class="container">
     <dspace:include page="/layout/location-bar.jsp" />
-</div>                
+</div>
 <%
     }
 %>
@@ -158,4 +158,4 @@
 <% if (request.getAttribute("dspace.layout.sidebar") != null) { %>
     <div class="row">
     <div class="col-md-9">
-<% } %>	
+<% } %>
